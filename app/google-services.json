@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826599562561",
+    "project_id": "drive-assist-f8625",
+    "storage_bucket": "drive-assist-f8625.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826599562561:android:df92d46b206f2e768295c0",
+        "android_client_info": {
+          "package_name": "com.example.Drive_Assist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826599562561-sac6qqu46nrtrd4brlkofhmrv0fpf8er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYc3f6UgbZVYob-p4gjVEFiJhTU4RVRCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826599562561-sac6qqu46nrtrd4brlkofhmrv0fpf8er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

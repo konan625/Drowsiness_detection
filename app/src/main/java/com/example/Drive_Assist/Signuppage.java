@@ -1,4 +1,4 @@
-package com.example.login_page;
+package com.example.Drive_Assist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,12 +11,19 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class Signuppage extends AppCompatActivity {
 
     EditText mFullname,memail,mpassword,mage;
     Button mregisterbutton;
     TextView mloginbutton;
     ProgressBar progressbar;
+
+    FirebaseFirestore fstore;
+    String userID;
+    FirebaseAuth fAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +37,8 @@ public class Signuppage extends AppCompatActivity {
         mregisterbutton = findViewById(R.id.registerbutton);
         mloginbutton = findViewById(R.id.registerbutton);
         progressbar = findViewById(R.id.progressbar);
+
+//        fAuth = Fireba
 
         mloginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +63,12 @@ public class Signuppage extends AppCompatActivity {
                     mpassword.setError("password is required");
                     return;
                 }
+
+                if(password.length()<6){
+                    mpassword.setError("password must be >= 6 characters");
+                    return;
+                }
+                progressbar.setVisibility(view.VISIBLE);
 
 
             }
