@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Signuppage"
-    android:background="@color/purple_200"
+    android:background="@drawable/bgimg"
     >
-    
 
     <TextView
         android:id="@+id/textview1"
@@ -64,7 +63,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#fff"
         android:textColorHint="#d8d4d4"
@@ -92,105 +91,37 @@
         android:layout_marginTop="16dp"
         />
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/timestamp1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Password"
-        android:inputType="textPersonName"
+        android:hint="at what time you sleep (in 24 hour format)"
         android:padding="10dp"
         android:textColor="#fff"
         android:textColorHint="#d8d4d4"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/age"
         android:layout_marginTop="16dp"
-        />
-    <TextView
-        android:id="@+id/askgender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Your Gender"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/age"
-        />
-    <RadioGroup
-        android:id="@+id/radiogender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/askgender">
-        <RadioButton
-            android:id="@+id/radiomale"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Male"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/askgender"
-            />
-
-    <RadioButton
-        android:id="@+id/radiofemale"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Female"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiomale"
-        />
-    <RadioButton
-        android:id="@+id/radiobinary"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Non Binary"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiofemale"
-        />
-    </RadioGroup>
+        android:inputType="datetime" />
     <EditText
-        android:id="@+id/address"
+        android:id="@+id/timestamp2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Address"
-        android:inputType="textPostalAddress"
+        android:hint="at what time you wake up (in 24 hour format)"
         android:padding="10dp"
         android:textColor="#fff"
         android:textColorHint="#d8d4d4"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radiogender"
-        app:layout_constraintVertical_bias="0.1399999"
-        />
-    <TextView
-        android:id="@+id/workinghour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter your working hours"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/address"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/timestamp1"
+        android:layout_marginTop="16dp"
+        android:inputType="datetime" />
 
     <Button
         android:id="@+id/registerbutton"
@@ -205,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/workinghour" />
+        app:layout_constraintTop_toBottomOf="@+id/timestamp2" />
 
     <TextView
         android:layout_width="wrap_content"
